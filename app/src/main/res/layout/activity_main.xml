@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:background="@drawable/logo_daily"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <Button
+       android:id="@+id/btn_started"
+       android:layout_marginTop="15dp"
+       android:padding="15dp"
+       android:background="@drawable/background_round_1"
+       android:textSize="25sp"
+       android:text="เริ่มต้นใช้งาน"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+</LinearLayout>

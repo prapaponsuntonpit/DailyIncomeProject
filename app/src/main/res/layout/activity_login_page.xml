@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background2"
+    tools:context=".LoginPage">
+  <TextView
+      android:textStyle="bold"
+      android:textSize="35sp"
+      android:text="เข้าสู่ระบบ"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+  <EditText
+      android:id="@+id/email_login"
+      android:hint="Email"
+      android:drawableLeft="@drawable/ic_person_black_24dp"
+      android:layout_marginTop="15dp"
+      android:padding="10dp"
+      android:background="@drawable/background_round_1"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/pass_login"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/background_round_1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_login"
+        android:padding="10dp"
+        android:background="@drawable/background_round_1"
+        android:textSize="25sp"
+        android:text="เข้าสู่ระบบ"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_register"
+        android:padding="10dp"
+        android:background="@drawable/background_round_1"
+        android:textSize="25sp"
+        android:text="ลงทะเบียน"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

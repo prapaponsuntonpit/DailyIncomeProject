@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/background2"
+    tools:context=".HomePage">
+    <TextView
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:text="จำนวนเงิน"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@drawable/background_round_1"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:text=" ยอดเงินคงเหลือ"
+          android:layout_width="50pt"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/edit_money_balance"
+          android:background="@android:color/white"
+          android:layout_gravity="center"
+          android:layout_marginLeft="20dp"
+          android:layout_width="200dp"
+          android:gravity="right"
+          android:editable="false"
+          android:layout_height="wrap_content"
+          android:inputType="number"/>
+   </LinearLayout>
+   <LinearLayout
+       android:id="@+id/btn_date_show"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@drawable/background_round_1"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <TextView
+          android:text=" วันที่"
+          android:layout_width="50pt"
+          android:layout_height="wrap_content" />
+      <EditText
+          android:id="@+id/edit_date_money"
+          android:background="@android:color/white"
+          android:layout_gravity="center"
+          android:drawableRight="@drawable/calendar"
+          android:layout_marginLeft="20dp"
+          android:hint="วว/ดด/ปป"
+          android:enabled="false"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content" />
+
+   </LinearLayout>
+   <TextView
+       android:textSize="18sp"
+       android:layout_marginTop="15dp"
+       android:text="รายการ"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recycle_income"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:clipToPadding="false"
+       android:overScrollMode="never"
+       android:layout_weight="1">
+   </android.support.v7.widget.RecyclerView>
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <ImageButton
+          android:id="@+id/btn_add_income"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:src="@drawable/plus"
+          android:background="#4777e257"
+          android:layout_height="wrap_content" />
+      <ImageButton
+          android:id="@+id/btn_del_income"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:src="@drawable/minus"
+          android:background="#66e25793"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.check.dailyincomeproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".advice10"></activity>
+        <activity android:name=".advice9" />
+        <activity android:name=".advice8" />
+        <activity android:name=".advice6" />
+        <activity android:name=".advice5" />
+        <activity android:name=".advice4" />
+        <activity android:name=".advice3" />
+        <activity android:name=".advice2" />
+        <activity android:name=".advice1" />
+        <activity android:name=".advice" />
+        <activity android:name=".SlideAdapter" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPage" />
+        <activity android:name=".RegisterPage" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="Saving Money"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".create_name_account" />
+        <activity android:name=".GetmoneyPage" />
+        <activity android:name=".PaymoneyPage" />
+    </application>
+
+</manifest>

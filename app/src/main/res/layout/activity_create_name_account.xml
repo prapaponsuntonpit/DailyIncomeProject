@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background2"
+    tools:context=".create_name_account">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/account_cartoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="18sp"
+            android:text="  สร้างสมุคบัญชีใหม่"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <EditText
+        android:id="@+id/name_account_new"
+        android:hint="ชื่อสมุคบัญชี"
+        android:padding="10dp"
+        android:background="@drawable/background_round_1"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/money_account_new"
+        android:hint="จำนวนเงินเริ่มต้น"
+        android:inputType="number"
+        android:padding="10dp"
+        android:background="@drawable/background_round_1"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel_accont"
+            android:text="ยกเลิก"
+            android:textSize="18sp"
+            android:background="@drawable/background_round_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_submit_account"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/background_round_1"
+            android:layout_width="wrap_content"
+            android:text="ยืนยัน"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
